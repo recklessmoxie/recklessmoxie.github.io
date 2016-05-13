@@ -1,11 +1,13 @@
 # Site wide configuration
 
-title: Site Title
+title: Reckless Moxie
 locale: en_US
-description: Describe your website here.
+description: Personal portfolio and tech blog.
 logo: site-logo.png
 search: true
 url: http://localhost:4000
+url: http://recklessmoxie.com
+url: recklessmoxie.com
 
 # Jekyll configuration
 
@@ -48,23 +50,23 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
+  name: Shelly Barkleu
   avatar: bio-photo.jpg
-  email: you@email.com
-  disqus-shortname:
-  twitter: #username
+  email: shelly@recklessmoxie.com
+  disqus-shortname: recklessmoxie
+  twitter: recklessmoxie
   facebook: #username
-  github: #username
+  github: recklessmoxie
   stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  instagram: #username
+  linkedin: shellybarkley
+  instagram: danbo_seattle
   flickr: #username
   tumblr: #username
   pinterest: #username
   weibo: #userid
   google:
     plus: #username
-    analytics:
+    analytics: UA-75239608-1
     verify:
     ad-client:
     ad-slot:
