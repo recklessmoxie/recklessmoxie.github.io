@@ -5,7 +5,7 @@ locale: en_US
 description: Personal portfolio and tech blog.
 logo: site-logo.png
 search: true
-url: http://localhost:4000
+# url: http://localhost:4000
 url: http://recklessmoxie.com
 url: recklessmoxie.com
 
