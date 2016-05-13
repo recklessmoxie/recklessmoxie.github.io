@@ -1,13 +1,13 @@
 # Site wide configuration
 
 title: Reckless Moxie
-locale: 
+locale:
 description: Personal portfolio and tech blog.
 logo: site-logo.png
 search: true
-# url: http://localhost:4000
-url: http://recklessmoxie.com
-url: //recklessmoxie.com
+url: http://localhost:4000
+# url: http://recklessmoxie.com
+# url: //recklessmoxie.com
 # url:
 # Jekyll configuration
 
