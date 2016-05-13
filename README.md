@@ -1,1 +1,1 @@
-# recklessmoxie.github.io
+# Personal tech blog, resume, and projects
