@@ -8,7 +8,7 @@ search: true
 # url: http://localhost:4000
 url: http://recklessmoxie.com
 url: //recklessmoxie.com
-url:
+# url:
 # Jekyll configuration
 
 permalink:   /:categories/:title/
@@ -37,8 +37,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Octopress
 
 # Default extensions
-post_ext: md
-page_ext: md
+post_ext: html
+page_ext: html
 
 # Found in _templates/
 post_layout: post
