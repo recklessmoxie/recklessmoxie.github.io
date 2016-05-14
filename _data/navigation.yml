@@ -1,18 +1,12 @@
 # Site navigation links
-- title: About
-  url: /about/
-
-- title: Skills
-  url: /skills/
-
-- title: Contact
-  url: /contact/
+- title: Home
+  url: /index.html/
 
 - title: Portfolio
   url: /portfolio/
 
-- title: Search
-  url: /search/
-
 - title: Blog
   url: /blog/
+  
+- title: Search
+  url: /search/
