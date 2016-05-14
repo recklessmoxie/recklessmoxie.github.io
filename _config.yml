@@ -37,8 +37,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Octopress
 
 # Default extensions
-post_ext: html
-page_ext: html
+post_ext: md
+page_ext: md
 
 # Found in _templates/
 post_layout: post
@@ -51,7 +51,7 @@ titlecase: true
 # Site owner
 owner:
   name: Shelly Barkley
-  avatar: bio-photo.png
+  avatar: bio-photo-2.png
   email: shelly@recklessmoxie.com
   disqus-shortname: recklessmoxie
   twitter: recklessmoxie
