@@ -5,10 +5,10 @@ locale:
 description: Personal portfolio and tech blog.
 logo: site-logo.png
 search: true
-url: http://localhost:4000
-# url: http://recklessmoxie.com
-# url: //recklessmoxie.com
-# url:
+# url: http://localhost:4000
+url: http://recklessmoxie.com
+url: //recklessmoxie.com
+
 # Jekyll configuration
 
 permalink:   /:categories/:title/
@@ -51,7 +51,7 @@ titlecase: true
 # Site owner
 owner:
   name: Shelly Barkley
-  avatar: bio-photo.jpg
+  avatar: bio-photo.png
   email: shelly@recklessmoxie.com
   disqus-shortname: recklessmoxie
   twitter: recklessmoxie
