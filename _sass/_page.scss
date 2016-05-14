@@ -127,13 +127,13 @@ span + .entry-title {
 /* author avatar (circular) */
 
 .bio-photo {
-	display: none;
+	display:none;
 	@include media($large) {
 		display: block;
 		width: 150px;
 		height: 150px;
 		margin-bottom: 10px;
-		@include rounded(150px);
+		@include rounded(300px);
 		@include clearfix;
 	}
 }
