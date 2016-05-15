@@ -28,12 +28,12 @@ image:
 
   <figure class="third">
    <a href="/images/vito.jpg"><img src="/images/vito.jpg" alt="dog"></a>
-   <a href="/images/halley.jpg"><img src="/images/halley.jpg" alt="cat"></a>
    <a href="/images/cricknkev.jpg"><img src="/images/cricknkev.jpg" alt="birds"></a>
+   <a href="/images/halley.jpg"><img src="/images/halley.jpg" alt="cat"></a>
+
    <figcaption> Some photos of my many critters. </figcaption>
   </figure>
 
 My coding/programming journey is just getting started. In February 2016 I completed a few JavaScript courses through <a href="https://www.codefellows.org/"> Code Fellows</a>, which is a programming bootcamp here in Seattle.
-Since my time at Code Fellows ended, I have begun self-study to further develop my programming knowledge. I am currently working through the front-end and JavaScript curriculum at <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
 
-Hopefully I will round out my education with some freelance work before I begin to look for a full-time position somewhere.
+Since my time at Code Fellows ended, I have begun self-study to further develop my programming knowledge. I am currently working through the front-end and JavaScript curriculum at <a href="https://www.freecodecamp.com/"> Free Code Camp.</a> Hopefully I will round out my education with some freelance work before I begin to look for a full-time position somewhere.
