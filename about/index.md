@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About
+title: About Me
 date: 2016-5-14
 search_omit: true
 share: false
@@ -37,3 +37,5 @@ image:
 My coding/programming journey is just getting started. In February 2016 I completed a few JavaScript courses through <a href="https://www.codefellows.org/"> Code Fellows</a>, which is a programming bootcamp here in Seattle.
 
 Since my time at Code Fellows ended, I have begun self-study to further develop my programming knowledge. I am currently working through the front-end and JavaScript curriculum at <a href="https://www.freecodecamp.com/"> Free Code Camp.</a> Hopefully I will round out my education with some freelance work before I begin to look for a full-time position somewhere.
+
+<div markdown="0"><a href="/portfolio/" class="btn pull-right"> Portfolio  <i class="fa fa-long-arrow-right fa-lg"></i> </a></div>
