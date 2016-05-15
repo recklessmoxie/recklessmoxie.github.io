@@ -309,3 +309,136 @@ span + .entry-title {
 		vertical-align: middle;
 	}
 }
+
+
+.caption-title {
+  font-family: $base-font;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 315px;
+  width: 100%;
+	height:auto;
+  color: #ffffff;
+  text-align: left;
+  font-size: 1.8rem;
+  background-color: #000000;
+  margin-bottom:10px;
+	padding: 0;
+}
+
+.caption-title * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.caption-title img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+	margin: 0;
+}
+
+.caption-title:after,
+.caption-title figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.caption-title:after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.65);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.caption-title figcaption {
+  z-index: 1;
+  padding: 40px;
+}
+
+.caption-title h3,
+.caption-title .links {
+  width: 100%;
+  margin: 5px 0;
+  padding: 0;
+	color: #ffffff;
+}
+
+.caption-title h3 {
+  line-height: 1.1em;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  opacity: 0;
+	color: #ffffff;
+}
+
+.caption-title p {
+  font-size: .8rem;
+  font-weight: 400;
+  letter-spacing: .1em;
+  opacity: 0;
+  top: 50%;
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+	color: #ffffff;
+}
+
+.caption-title i {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 20px 25px;
+  font-size: 2.4rem;
+  opacity: 0;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+	color: #ffffff;
+}
+
+.caption-title a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.caption-title:hover img,
+.caption-title.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.caption-title:hover:after,
+.caption-title.hover:after {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.caption-title:hover h3,
+.caption-title.hover h3,
+.caption-title:hover p,
+.caption-title.hover p,
+.caption-title:hover i,
+.caption-title.hover i {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1;
+}

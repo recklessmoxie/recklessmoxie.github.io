@@ -11,9 +11,10 @@ share: false
 comments: false
 ---
 
-<h3>Hello World!</h3>
+## Hello World!
 
-<p>Now we have that out of the way. No better way to get started, right?</p>
-<p>Let's just go ahead and jump right in... this site is intended to serve as a landing page to house my portfolio, blog, and personal bio. Take a look around and get to know me (and my work) a little better.</p>
+Now we have that out of the way. No better way to get started, right?
 
-<div markdown="0"><a href="/about/" class="btn">Learn More  <i class="fa fa-long-arrow-right fa-lg"></i> </a></div>
+Let's just go ahead and jump right in... This site is intended to serve as a landing page to house my portfolio, blog, and personal bio. Take a look around and get to know me (and my work) a little better.
+
+<div markdown="0"><a href="/about/" class="btn pull-right">Learn More  <i class="fa fa-long-arrow-right fa-lg"></i> </a></div>
