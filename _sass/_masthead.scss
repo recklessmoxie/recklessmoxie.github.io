@@ -46,6 +46,11 @@
       height: 200px;
       @include rounded(200px); /* crops in a circle */
     }
+    @include media($small) {
+      width: 150px;
+      height: 150px;
+      @include rounded(200px);
+    }
   }
 }
 
