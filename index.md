@@ -4,9 +4,8 @@ title: Reckless Moxie
 excerpt: "Personal portfolio and tech blog"
 search_omit: false
 image:
-  feature: home.jpg
-  credit: Wallpaper Backgrounds
-  creditlink: http://wallpaperbackgrounds.com/wallpaper/37370/
+  feature: greatwheel.jpg
+  credit: Shelly Barkley
 share: false
 comments: false
 ---
