@@ -134,7 +134,7 @@ figure {
   }
   a {
     img {
-      @include transform(translateY(0));
+		  @include transform(translateY(0));
       -webkit-transition-duration: 0.25s;
       -moz-transition-duration: 0.25s;
       -o-transition-duration: 0.25s;
