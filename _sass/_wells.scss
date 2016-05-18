@@ -6,6 +6,6 @@
 
 .well {
   padding: 20px;
-  border: 1px solid $comp-color;
+  border: 2px solid $comp-color;
   @include rounded(4px);
 }
