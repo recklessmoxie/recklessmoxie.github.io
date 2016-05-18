@@ -93,3 +93,5 @@ image:
   <a href="http://www.recklessmoxie.com/bus-mall/"></a>
 </figure>  
 </div>
+
+<div markdown="0"><a href="http://www.recklessmoxie.com" class="btn pull-right"> Home <i class="fa fa-long-arrow-right fa-lg"></i> </a></div>
