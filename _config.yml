@@ -1,7 +1,7 @@
 # Site wide configuration
 
 title: Reckless Moxie
-locale:
+locale: en_us
 description: Personal portfolio and tech blog.
 logo: site-logo.png
 search: true

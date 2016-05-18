@@ -8,7 +8,6 @@ comments: false
 image:
   feature: gasworks.jpg
   credit: Shelly Barkley
-  creditlink:
 ---
 
 
