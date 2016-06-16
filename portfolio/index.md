@@ -11,6 +11,30 @@ image:
 ---
 
 <div class="well">
+<h4>Random Quote Generator</h4>
+<p>This project is part of the Front End Development Certification through
+<a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
+</p>
+<figure class="caption-title">
+<img src="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1466103475/Screen_Shot_2016-06-16_at_11.57.07_AM_iq3vtx.png">
+<figcaption>
+<h3>Random Quote Generator</h3>
+<p> View project on CodePen</p>
+<i class ="fa fa-codepen text-center"></i>
+</figcaption>
+<a href="http://codepen.io/RecklessMoxie/pen/BzKKLP/"></a>
+</figure>
+<h5>Project Guidelines</h5>
+<ol>
+<li>Don't look at the example project's code. Figure it out for yourself.</li>
+<li>Fulfill the below user stories. Use whichever libraries you need. Give it your own personal style.</li>
+</ol>
+<ul>
+<li>User Story: I can click a button to show me a new random quote.</li>
+<li>User Story: I can press a button to tweet out a quote.</li>
+</ul>
+</div>
+<div class="well">
 <h4>Personal Portfolio Webpage</h4>
 <p>This project is part of the Front End Development Certification through
   <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
