@@ -27,7 +27,7 @@ image:
 </figcaption>
 </figure>
 
-Once all the color palettes had been created, It was time to use them <a href="http://qrohlf.com/trianglify/">Trianglify</a> to create the background image. Trianglify utilizes HTML5 Canvas which I had not used before. The depth and variety of images which can be created with these techniques was impressive.
+Once all the color palettes had been created, It was time to use <a href="http://qrohlf.com/trianglify/">Trianglify</a> to create the background images. Trianglify utilizes HTML5 Canvas which I had not used before. The depth and variety of images which can be created with these techniques was impressive.
 
 <figure class="third">
 <a href="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467444045/Screen_Shot_2016-07-02_at_12.20.16_AM_twmfuh.png"><img src="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467444045/Screen_Shot_2016-07-02_at_12.20.16_AM_twmfuh.png"></a>
