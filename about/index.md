@@ -6,7 +6,7 @@ search_omit: true
 share: false
 comments: false
 image:
-  feature: gasworks.jpg
+  feature: http://res.cloudinary.com/recklessmoxie/image/upload/c_fill,h_587,q_100/v1463523969/26983700652_198e2d440d_k_jvzpzr.jpg
   credit: Shelly Barkley
 ---
 
