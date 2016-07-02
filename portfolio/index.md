@@ -9,6 +9,31 @@ image:
   credit: Shelly Barkley
 
 ---
+<div class="well">
+<h4>Local Weather App</h4>
+<p> This project is part of the Front End Development Certification through
+<a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
+</p>
+<p>See my blog post about this project here.</p>
+<figure class="caption-title">
+<img src="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467437849/Screen_Shot_2016-07-01_at_10.35.44_PM_ouzska.png">
+<figcaption>
+<h3>Local Weather App</h3>
+<p> View project on Codepen</p>
+<i class ="fa fa-codepen text-center"></i>
+</figcaption>
+<a href="http://codepen.io/RecklessMoxie/full/qNNQjV/"></a>
+</figure>
+<h5>Project Guidelines</h5>
+<ol>
+<li>Don't look at the example project's code. Figure it out for yourself.</li>
+<li>Fulfill the below user stories. Use whichever libraries or APIs you need. Give it your own personal style.</li>
+</ol>
+<ul>
+<li>User Story: I can see the weather in my current location.</li>
+<li>User Story: I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.</li>
+<li>User Story: I can push a button to toggle between Fahrenheit and Celsius.</li>
+</ul>
 
 <div class="well">
 <h4>Random Quote Generator</h4>
