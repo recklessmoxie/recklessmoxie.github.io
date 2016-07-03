@@ -2,12 +2,15 @@
 layout: post
 title: Local Weather App
 date: 2016-6-1
-modified: 2016-6-1
-excerpt: "Free Code Camp project using Open Weather API"
+modified: 2016-6-2
+comments: true
+excerpt:
+categories: blog
+tags: ["Free Code Camp", "html5 Canvas", "Trianglify", "JavaScript", "API"]
 search_omit: false
 image:
-feature: feature-image-steam.JPG
-credit: Shelly Barkley
+  feature: steam.JPG
+  credit: Shelly Barkley
 ---
 ### Project Objectives:
   * Create an app using the Open Weather API, and geolocation to display the user's current weather conditions.

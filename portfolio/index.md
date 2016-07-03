@@ -14,7 +14,7 @@ image:
 <p> This project is part of the Front End Development Certification through
 <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
 </p>
-<p>See my blog post about this project here.</p>
+<p>See the <a href="/blog/Local-Weather-App/"> blog post </a> about this project.</p>
 <figure class="caption-title">
 <img src="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467437849/Screen_Shot_2016-07-01_at_10.35.44_PM_ouzska.png">
 <figcaption>
