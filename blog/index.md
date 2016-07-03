@@ -1,13 +1,9 @@
 ---
-layout: post
-title: Local Weather App
-date: 2016-6-1
-modified: 2016-6-1
-excerpt: "Free Code Camp project using Open Weather API"
-search_omit: false
-image:
-  feature: steam.JPG
-  credit: Shelly Barkley
+
+layout: page
+title: Blog
+excerpt: "An archive of blog posts sorted by date."
+search_omit: true
 ---
 
 <ul class="post-list">

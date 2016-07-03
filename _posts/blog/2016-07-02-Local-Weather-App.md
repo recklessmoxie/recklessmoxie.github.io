@@ -3,6 +3,7 @@ layout: post
 title: Local Weather App
 date: 2016-6-1
 modified: 2016-6-1
+comments: true
 excerpt: "Free Code Camp project using Open Weather API"
 search_omit: false
 image:
