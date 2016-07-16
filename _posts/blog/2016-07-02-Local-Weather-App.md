@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Local Weather App
+title: Local Weather App (Part 1)
 date: 2016-7-1
 modified: 2016-7-2
 comments: true
@@ -57,9 +57,9 @@ ___
 <p>After completing the color palettes, It was time to create my background images. <a href="http://qrohlf.com/trianglify/"> Trianglify</a> is a really fun Javascript add-on which algorithmically generates triangle art utilizing HTML5 Canvas. I came into the project completely unfamiliar with Canvas, so I was prepared for a steep learning curve. </p>
 ___
 
-<p>While reading the (very thurough) documentation, I learned Trianglify would accept a custom color palette for both the x and y axis. I wanted to achieve an effect similar to the <a href="http://colorbrewer2.org/"> Color Brewer Scale </a>(basically a gradient) to represent data points.</p>
+<p>While reading the (very thurough) documentation, I learned Trianglify would accept a custom color palette for both the x and y axis. I wanted to achieve a gradient effect similar to the <a href="http://colorbrewer2.org/"> Color Brewer Scale </a> to represent my data points.</p>
 
-<p>It became necessary to add more colors to achieve proper gradients. Visual appeal in the end product was very important as well.<a href="http://gka.github.io/chroma.js/"> Chroma Js </a> presented as the perfect solution. Chroma JS is a color manipulation library which also has an interactive tool, which I used to help to keep the JS light.</p>  
+<p>It became necessary to add more colors to achieve proper gradients. Visual appeal in the end product was very important as well. I found <a href="http://gka.github.io/chroma.js/"> Chroma Js </a> to be a perfect solution. Chroma JS is a color manipulation library and has an interactive tool as well. Using this tool allowed me to keep the JS light.</p>  
 
 <figure class="half">
 <a href="/images/Screen Shot 2016-07-02 at 1.36.59 PM.png">
@@ -71,7 +71,7 @@ ___
 <figcaption> Every Color Brewer Scale: visual reference & Chroma.js </figcaption>
 </figure>
 
-<p>The hex colors I ended up with were nice, still seemed a little bland. After playing around with many different hex codes, the final product ended up being a combination of my palettes and some Color Brewer ones.</p>
+<p>The hex colors I ended up with were nice yet still seemed a little bland. After playing around with many different hex codes, the final product ended up being a combination of my custom palettes and some Color Brewer ones.</p>
 
 ```javascript
 
