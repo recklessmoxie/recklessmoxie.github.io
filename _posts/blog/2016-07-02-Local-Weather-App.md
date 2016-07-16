@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Local Weather App
-date: 2016-6-1
-modified: 2016-6-2
+date: 2016-7-1
+modified: 2016-7-2
 comments: true
 excerpt:
 categories: blog
@@ -17,21 +17,34 @@ image:
   * Enable the background or an image to change based on conditions returned from the API call.
   * Allow the user to toggle between Fahrenheit and Celsius.
 
-The outcome of my efforts ended up being a lot more than required by the objectives; so the steps of the project will be broken down over a series of blog posts.
+<figure class="caption-title">
+<img src="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467437849/Screen_Shot_2016-07-01_at_10.35.44_PM_ouzska.png">
+<figcaption>
+<p>See the live project here</p>
+</figcaption>
+<a href="http://www.recklessmoxie.com/Weather-App/"></a>
+</figure>
+<p>Since the final product ended up being more complex than the required objectives, I chose to break down the project's steps over a series of blog posts.</p>
+____
 
+## First Objective: Enable background/image changes
+ <p>Upon reading through the objectives, this was a really appealing aspect of the project. Creativity is the name of the game for this app. So, instead of using a static image to represent specific conditions, I decided to have some fun (and go a tad bit overboard) by creating a multi-dimensional image which would be generated dynamically.</p>
 
-##### First Objective: Enable background/image changes
- <p>This is the part of the project I found most exciting when I read the objectives. Instead of using a static image to represent specific conditions I wanted to go bigger, and have some fun with it.</p>
- <p>One of the most valuable tools I used for this part of the project was <a href="https://color.adobe.com/create/image/"> Adobe ColorCC. </a> It's pretty straightforward, and you can create a custom color palette from any photo you upload. I was able to create a palette from the <a href="http://graphical.weather.gov/sectors/conus.php?element=T"> NOAA color key </a> for each temperature range represented in the key.</p>
+##### Background Image Colors:
+  <p>A tool which proved invaluable right from the start was <a href="https://color.adobe.com/create/image/"> Adobe ColorCC. </a> It's use is fairly straightforward. A user can create custom color palettes from an uploaded image, or chose from existing palettes created by other users. I created a custom color palette drawing upon the <a href="http://graphical.weather.gov/sectors/conus.php?element=T"> NOAA color key </a> for inspiration.</p>
+
 
  <figure class="half">
  <a href="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467441008/Screen_Shot_2016-07-01_at_11.21.19_PM_zcb0lw.png"><img src="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467441008/Screen_Shot_2016-07-01_at_11.21.19_PM_zcb0lw.png"></a>
  <a href="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467442314/Screen_Shot_2016-07-01_at_11.51.08_PM_mdgjrk.png"><img src="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467442314/Screen_Shot_2016-07-01_at_11.51.08_PM_mdgjrk.png"></a>
-<figcaption> The NOAA website has great weather map graphics along with a vibrant color key. It was just the right source for inspiration.
+<figcaption> The NOAA website was a great source for map graphics.
 </figcaption>
 </figure>
+___
 
-Once all the color palettes had been created, It was time to use <a href="http://qrohlf.com/trianglify/">Trianglify</a> to create the background images. Trianglify utilizes HTML5 Canvas which I had not used before. The depth and variety of images which can be created with these techniques was impressive.
+##### Trianglify:
+
+<p>Once all the color palettes were created, It was time to create background images with <a href="http://qrohlf.com/trianglify/"> Trianglify.</a> Trianglify is a really fun Javascript add-on which algorithmically generates triangle art utilizing HTML5 Canvas. I went into this project completely unfamiliar with Canvas, so I was prepared for a steep learning curve. Thankfully the documentation is fantastic which allowed me to create exactly what I had envisioned.</p>
 
 <figure class="third">
 <a href="/images/Screen Shot 2016-07-02 at 12.13.44 PM.png"><img src="/images/Screen Shot 2016-07-02 at 12.13.44 PM.png"></a>
