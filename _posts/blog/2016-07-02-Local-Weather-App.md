@@ -28,7 +28,7 @@ image:
 ____
 
 ## First Objective: Enable background/image changes
- <p>Upon reading through the objectives, this was a really appealing aspect of the project. Creativity is the name of the game for this app. So, instead of using a static image to represent specific conditions, I decided to have some fun (and go a tad bit overboard) by creating a multi-dimensional image which would be generated dynamically.</p>
+ <p>Upon reading through the objectives, this was a really appealing aspect of the project. Creativity is the name of the game for this app. A plan developed in my mind to dynamically generate a multi-dimensional image for each set of weather conditions, instead of simply using a static image.</p>
 
 ##### Background Image Colors:
   <p>A tool which proved invaluable right from the start was <a href="https://color.adobe.com/create/image/"> Adobe ColorCC. </a> It's use is fairly straightforward. A user can create custom color palettes from an uploaded image, or chose from existing palettes created by other users. I created a custom color palette drawing upon the <a href="http://graphical.weather.gov/sectors/conus.php?element=T"> NOAA color key </a> for inspiration.</p>
