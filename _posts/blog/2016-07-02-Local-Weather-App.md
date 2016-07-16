@@ -31,24 +31,86 @@ ____
  <p>Upon reading through the objectives, this was a really appealing aspect of the project. Creativity is the name of the game for this app. A plan developed in my mind to dynamically generate a multi-dimensional image for each set of weather conditions, instead of simply using a static image.</p>
 
 ##### Background Image Colors:
-  <p>A tool which proved invaluable right from the start was <a href="https://color.adobe.com/create/image/"> Adobe ColorCC. </a> It's use is fairly straightforward. A user can create custom color palettes from an uploaded image, or chose from existing palettes created by other users. I created a custom color palette drawing upon the <a href="http://graphical.weather.gov/sectors/conus.php?element=T"> NOAA color key </a> for inspiration.</p>
+  <p>A tool which proved invaluable right from the start was <a href="https://color.adobe.com/create/image/"> Adobe ColorCC. </a> It's use is fairly straightforward. A user can create custom color palettes from an uploaded image, or chose from existing palettes created by other users. A series of custom color palettes were put together drawing upon the <a href="http://graphical.weather.gov/sectors/conus.php?element=T"> NOAA color key </a> for inspiration.</p>
 
 
- <figure class="half">
+ <figure class="third">
  <a href="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467441008/Screen_Shot_2016-07-01_at_11.21.19_PM_zcb0lw.png"><img src="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467441008/Screen_Shot_2016-07-01_at_11.21.19_PM_zcb0lw.png"></a>
  <a href="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467442314/Screen_Shot_2016-07-01_at_11.51.08_PM_mdgjrk.png"><img src="http://res.cloudinary.com/recklessmoxie/image/upload/q_100/v1467442314/Screen_Shot_2016-07-01_at_11.51.08_PM_mdgjrk.png"></a>
+ <a href="/images/Screen Shot 2016-07-02 at 12.13.00 PM.png"><img src="/images/Screen Shot 2016-07-02 at 12.13.00 PM.png"></a>
 <figcaption> The NOAA website was a great source for map graphics.
 </figcaption>
 </figure>
 ___
 
-##### Trianglify:
 
-<p>Once all the color palettes were created, It was time to create background images with <a href="http://qrohlf.com/trianglify/"> Trianglify.</a> Trianglify is a really fun Javascript add-on which algorithmically generates triangle art utilizing HTML5 Canvas. I went into this project completely unfamiliar with Canvas, so I was prepared for a steep learning curve. Thankfully the documentation is fantastic which allowed me to create exactly what I had envisioned.</p>
+##### Trianglify, Chroma JS, and Color Brewer:
 
-<figure class="third">
-<a href="/images/Screen Shot 2016-07-02 at 12.13.44 PM.png"><img src="/images/Screen Shot 2016-07-02 at 12.13.44 PM.png"></a>
-<a href="/images/Screen Shot 2016-07-02 at 12.13.00 PM.png"><img src="/images/Screen Shot 2016-07-02 at 12.13.00 PM.png"></a>
-<a href="/images/Screen Shot 2016-07-02 at 1.36.59 PM.png"><img src="/images/Screen Shot 2016-07-02 at 1.36.59 PM.png"></a>
-<figcaption></figcaption>
-<figure>
+<figure class="caption-title pull-right">
+<img src="https://cloud.githubusercontent.com/assets/347189/6771063/f8b0af46-d090-11e4-8d4c-6c7ef5bd9d37.png">
+<figcaption>
+   <p>Click to try the Trianglify Generator</p>
+</figcaption>
+<a href="http://qrohlf.com/trianglify-generator/"></a>
+</figure>
+
+<p>After completing the color palettes, It was time to create my background images. <a href="http://qrohlf.com/trianglify/"> Trianglify</a> is a really fun Javascript add-on which algorithmically generates triangle art utilizing HTML5 Canvas. I came into the project completely unfamiliar with Canvas, so I was prepared for a steep learning curve. </p>
+___
+
+<p>While reading the (very thurough) documentation, I learned Trianglify would accept a custom color palette for both the x and y axis. I wanted to achieve an effect similar to the <a href="http://colorbrewer2.org/"> Color Brewer Scale </a>(basically a gradient) to represent data points.</p>
+
+<p>It became necessary to add more colors to achieve proper gradients. Visual appeal in the end product was very important as well.<a href="http://gka.github.io/chroma.js/"> Chroma Js </a> presented as the perfect solution. Chroma JS is a color manipulation library which also has an interactive tool, which I used to help to keep the JS light.</p>  
+
+<figure class="half">
+<a href="/images/Screen Shot 2016-07-02 at 1.36.59 PM.png">
+<img src="/images/Screen Shot 2016-07-02 at 1.36.59 PM.png">
+</a>
+<a href="/images/Screen Shot 2016-07-02 at 12.13.44 PM.png">
+<img src="/images/Screen Shot 2016-07-02 at 12.13.44 PM.png">
+</a>
+<figcaption> Every Color Brewer Scale: visual reference & Chroma.js </figcaption>
+</figure>
+
+<p>The hex colors I ended up with were nice, still seemed a little bland. After playing around with many different hex codes, the final product ended up being a combination of my palettes and some Color Brewer ones.</p>
+
+```javascript
+
+var midPurple = Trianglify({
+  cell_size: 60,
+  variance: 0.74,
+  width: window.innerWidth,
+  height: window.innerHeight,
+  x_colors: ['#cf7dd1', '#c274ce', '#b56bcb', '#a762c8', '#9958c4',
+    '#8d51bf', '#804bba', '#7445b5', '#683fb0'
+  ],
+  y_colors: 'Purples',
+  seed: Math.seedrandom('added entropy', {
+    entropy: true
+  })
+});
+
+```
+<figure class="half">
+<a href="/images/light-purples.png">
+<img src="/images/light-purples.png">
+</a>
+<a href="/images/purples.png">
+<img src="/images/purples.png">
+</a>
+<figcaption> Left image created with hex colors on both x & y axis. Right image created with Color Brewer Scale 'Purples' both x & y axis.
+</figcaption>
+</figure>
+
+<figure class="half">
+<a href="/images/Screen Shot 2016-07-15 at 11.18.14 PM.png">
+<img src="/images/Screen Shot 2016-07-15 at 11.18.14 PM.png">
+</a>
+<a href="/images/Screen Shot 2016-07-15 at 11.22.18 PM.png">
+<img src="/images/Screen Shot 2016-07-15 at 11.22.18 PM.png">
+</a>
+<figcaption>
+Left image (final product) derived from code above. Right image was desired outcome.
+</figcaption>
+</figure>
+
+<p> Each of the color palettes was based on a temperature range represented in the NOAA key seen above. The individual color palettes were coded as demonstrated here and used to generate/display an image based on the user's current temperature range in F° or C°.</p>
