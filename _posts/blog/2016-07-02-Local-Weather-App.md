@@ -74,9 +74,37 @@ ___
 </figure>
 ___
 
-##### The Code:
+##### The Final Color Schemes:
 
-<p>The hex colors I ended up with were nice yet still seemed a little bland. After playing around with many different hex codes, the final product ended up being a combination of my custom palettes and some Color Brewer ones.</p>
+<p>Each final color palette was based on a temperature range represented in the NOAA color key shown above. The hex colors derived from Chroma.js were nice, yet still seemed a little bland. After testing many different hex codes the final product was a combination of my custom palettes and some Color Brewer ones.</p>
+
+<figure class="half">
+<a href="/images/light-purples.png">
+<img src="/images/light-purples.png">
+</a>
+<a href="/images/purples.png">
+<img src="/images/purples.png">
+</a>
+<figcaption> First image created with hex colors on both x & y axis. Second image created with Color Brewer Scale 'Purples' both x & y axis.
+</figcaption>
+</figure>
+
+<figure class="half">
+<a href="/images/Screen Shot 2016-07-15 at 11.18.14 PM.png">
+<img src="/images/Screen Shot 2016-07-15 at 11.18.14 PM.png">
+</a>
+<a href="/images/Screen Shot 2016-07-15 at 11.22.18 PM.png">
+<img src="/images/Screen Shot 2016-07-15 at 11.22.18 PM.png">
+</a>
+<figcaption>
+First image (final product) derived from code below. Second image was desired outcome.
+</figcaption>
+</figure>
+___
+
+<p>The individual color palettes were coded as demonstrated below.
+The resulting image is dynamically generated based on user data returned by the API call which reflects the current temperature range at their location, either in F° or C°.</p>
+
 
 ```javascript
 
@@ -95,30 +123,7 @@ var midPurple = Trianglify({
 });
 
 ```
-<figure class="half">
-<a href="/images/light-purples.png">
-<img src="/images/light-purples.png">
-</a>
-<a href="/images/purples.png">
-<img src="/images/purples.png">
-</a>
-<figcaption> Left image created with hex colors on both x & y axis. Right image created with Color Brewer Scale 'Purples' both x & y axis.
-</figcaption>
-</figure>
 
-<figure class="half">
-<a href="/images/Screen Shot 2016-07-15 at 11.18.14 PM.png">
-<img src="/images/Screen Shot 2016-07-15 at 11.18.14 PM.png">
-</a>
-<a href="/images/Screen Shot 2016-07-15 at 11.22.18 PM.png">
-<img src="/images/Screen Shot 2016-07-15 at 11.22.18 PM.png">
-</a>
-<figcaption>
-Left image (final product) derived from code above. Right image was desired outcome.
-</figcaption>
-</figure>
-
-<p> Each color palettes was based on a temperature range represented in the NOAA color key seen above. The individual color palettes were coded as demonstrated here and used to generate/display an image based on the user's current temperature range in F° or C°.</p>
 
 
 <div markdown="0"><a href="http://www.recklessmoxie.com" class="btn pull-right"> Part 2 <i class="fa fa-long-arrow-right fa-lg"></i> </a></div>
