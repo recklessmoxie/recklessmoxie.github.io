@@ -5,7 +5,7 @@ date: 2016-5-15
 modified: 2016-5-15
 excerpt: "Here are a few of the projects I have completed."
 image:
-  feature: sculpturepark.jpg
+  feature: sculpture.jpg
   credit: Shelly Barkley
 
 ---

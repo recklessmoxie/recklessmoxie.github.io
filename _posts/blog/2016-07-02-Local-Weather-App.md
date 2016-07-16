@@ -10,7 +10,8 @@ categories: blog
 tags: ["Free Code Camp", "html5 Canvas", "Trianglify", "JavaScript", "API"]
 search_omit: false
 image:
-  feature: steam.JPG
+  feature: steam.jpg
+  thumb: weather1thumb.png
   credit: Shelly Barkley
 ---
 ### Project Objectives:
@@ -73,6 +74,7 @@ ___
 </figure>
 ___
 
+##### The Code:
 
 <p>The hex colors I ended up with were nice yet still seemed a little bland. After playing around with many different hex codes, the final product ended up being a combination of my custom palettes and some Color Brewer ones.</p>
 
@@ -118,6 +120,5 @@ Left image (final product) derived from code above. Right image was desired outc
 
 <p> Each color palettes was based on a temperature range represented in the NOAA color key seen above. The individual color palettes were coded as demonstrated here and used to generate/display an image based on the user's current temperature range in F° or C°.</p>
 
-<i> Part 2 coming soon! </i>
 
-<!-- <div markdown="0"><a href="http://www.recklessmoxie.com" class="btn pull-right"> Part 2 <i class="fa fa-long-arrow-right fa-lg"></i> </a></div> -->
+<div markdown="0"><a href="http://www.recklessmoxie.com" class="btn pull-right"> Part 2 <i class="fa fa-long-arrow-right fa-lg"></i> </a></div>
