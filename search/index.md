@@ -5,7 +5,7 @@ date:
 modified:
 excerpt:
 image:
-  feature: skyline.png
+  feature: mist.jpg
   credit: Shelly Barkley
 search_omit: true
 sitemap: false
