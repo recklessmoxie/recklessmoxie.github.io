@@ -10,8 +10,8 @@ categories: blog
 tags: ["Free Code Camp", "html5 Canvas", "Trianglify", "JavaScript", "API"]
 search_omit: false
 image:
-  feature: steam.jpg
-  thumb: steam.jpg
+  feature: steamy.jpg
+  thumb: weather1thumb.png
   credit: Shelly Barkley
 ---
 ### Project Objectives:
