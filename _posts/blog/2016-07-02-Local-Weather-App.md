@@ -4,6 +4,7 @@ title: Local Weather App (Part 1)
 date: 2016-7-1
 modified: 2016-7-2
 comments: true
+share: true
 excerpt:
 categories: blog
 tags: ["Free Code Camp", "html5 Canvas", "Trianglify", "JavaScript", "API"]
