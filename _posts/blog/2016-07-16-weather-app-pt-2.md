@@ -33,3 +33,16 @@ ____
 
 
 #### Geolocation API
+
+<figure class="caption-title pull-right">
+<img src="/images/Screen Shot 2016-07-17 at 11.39.56 AM.png">
+<figcaption>
+<h3>Click to try the ip-api call</h3>
+<p>Sample data from ip-api.</p>
+</figcaption>
+<a href="http://ip-api.com/json"></a>
+</figure>
+
+<p>When I began this project I was apprehensive about using two different API calls. The project just prior to this was a random quote generator <a href="http://codepen.io/RecklessMoxie/full/BzKKLP/">(seen here)</a> which involved a single API call.</p>
+
+<p> The API documentation was all I used to complete the previous project. One goal I had for this project was to better understand API calls. Turns out, it's not hard or scary. In my opinion, the best way to understand an API is to use it. Seeing the data the call returns for yourself definitely helps everything sink in.</p>
