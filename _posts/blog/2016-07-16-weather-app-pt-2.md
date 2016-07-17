@@ -50,4 +50,40 @@ ____
 
 #### What do you do with all that data?
 
-<p> Another aspect of API's I found difficult was knowing how to access and use the data from the API call. Using the browser's developer console proved to be a great learning experience for me. This way, you can test out
+<p> Another aspect of API's I found difficult at first was accessing specific portions of the returned data from the call. The only data I needed from the ip-api was the user's city and region to pass into the Open Weather API call in another function.</p>
+
+```javascript
+
+getLocation();
+
+//Retrieves user city and region data from ip-api and passes it to a function for an Open Weather API call //
+function getLocation() {
+  $.ajax({
+    url: 'http://ip-api.com/json',
+    method: 'GET',
+    data: {},
+    dataType: 'json',
+    success: function (data) {
+      $local = data.city + ', ' + data.region;
+      setConditions($local);
+    },
+    error: function (err) {
+      console.log(err)
+    }
+  });
+}
+```
+
+<p>Once the ip-api call function and the variable to hold the data were written, console.log()  verified the data was correct. Using the browser's developer console proved to be a great learning experience for me.</p>
+
+<p>
+<figure>
+<a href="/images/consolelog.png">
+<img src="/images/consolelog.png">
+</a>
+<figcaption>
+console.log(); showing what the variable $local contains
+</figcaption>
+</figure>
+</p>
+____
