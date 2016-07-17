@@ -34,6 +34,11 @@ image:
 <li>User Story: I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.</li>
 <li>User Story: I can push a button to toggle between Fahrenheit and Celsius.</li>
 </ul>
+</div>
+_____
+
+
+
 
 <div class="well">
 <h4>Random Quote Generator</h4>
@@ -59,6 +64,11 @@ image:
 <li>User Story: I can press a button to tweet out a quote.</li>
 </ul>
 </div>
+_____
+
+
+
+
 <div class="well">
 <h4>Personal Portfolio Webpage</h4>
 <p>This project is part of the Front End Development Certification through
@@ -86,6 +96,8 @@ image:
 <li>User Story: I navigate to different sections of the webpage by clicking buttons in the navigation.</li>
 </ul>
 </div>
+ ______
+
 
 <div class="well">
   <h4>Tribute Page</h4>
@@ -110,6 +122,8 @@ image:
   <li>User Story: I can click on a link that will take me to an external website with further information on the topic.</li>
   </ul>
 </div>
+ _____
+
 
 <div class="well">
   <h4>Final Project: Code Fellows Bootcamp</h4>
@@ -126,6 +140,9 @@ image:
   <a href="http://carrieshort.github.io/game-closet/index.html"></a>
 </figure>
 </div>
+_____
+
+
 
 <div class="well">
   <h4>Final Personal Project: Code Fellows</h4>
@@ -142,5 +159,7 @@ image:
   <a href="http://www.recklessmoxie.com/bus-mall/"></a>
 </figure>  
 </div>
+____
 
-<div markdown="0"><a href="http://www.recklessmoxie.com" class="btn pull-right"> Home <i class="fa fa-long-arrow-right fa-lg"></i> </a></div>
+
+<div markdown="0"><a href="http://www.recklessmoxie.com" class="btn"><i class="fa fa-home"></i> Home </a><a href="/blog/" class="btn pull-right"><i class="fa fa-pencil"></i> Blog </a></div>
