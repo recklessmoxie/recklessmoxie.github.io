@@ -80,7 +80,7 @@ function getLocation() {
 }
 ```
 
-<p>The browser's developer console proved to be a great tool, and learning experience too. Once the ip-api call function and the variable to hold the data were written console.log() verified the necessary data was there. </p>
+<p>The developer console proved to be very useful, and was a learning experience too. Once the ip-api call function and the variable to hold the data were written console.log() verified the necessary data was present. </p>
 
 <p>
 <figure>
@@ -96,7 +96,7 @@ ____
 
 #### Open Weather API
 
-##### This function creates the Open Weather API call:
+##### Function to initialize an Open Weather API call:
 
 ```javascript
 //Returns API data and routes it to various functions//
@@ -121,9 +121,8 @@ ____
 
 #### What happened?
 
-<p>The function called the Open Weather API with data obtained by the ip-api. A significant amount of data is returned from this call which gets utilized by the remaining functions to add DOM content.</p>
+<p>An Open Weather API call was made with the inclusion of data obtained by the ip-api. In order to see the significant amount of data returned by the API call, I included a console.log(). A quick look at the developer console reveals this data.</p>
 
-<p> Let's take a look. All we have to do is open the developer console in our browser, because we included a console.log(data); within the function.</p>
 
 <p>
 <figure>
@@ -135,8 +134,10 @@ ____
 
 #### Working with temperature data
 
-<p> Accessing information becomes pretty simple, once you are able to see the results.
-The first piece of information worked with was the current temperature. The figure below shows a 'main' object, which contains temperature information. My API call asked for c°, but data can be retrieved in f° and kelvin as well (see <a href="http://openweathermap.org/current#data"> API documentation </a> for greater detail).</p>
+<p> Accessing information became pretty simple, once I was able to see the results.
+The first piece of information I worked with was the current temperature.</p>
+
+<p> The figure below shows a 'main' object, which contains temperature information. My API call asked for c°, but data can be retrieved in f° and kelvin as well (see <a href="http://openweathermap.org/current#data"> API documentation </a> for greater detail).</p>
 
 <figure>
 <a href ="/images/main-temp.png">
@@ -147,7 +148,7 @@ ____
 
 ##### Adding to the function
 
-<p>New code added within the base function places the temperature data into variables used elsewhere within the app.</p>
+<p>New code added to the base function placed the temperature data into variables used elsewhere within the app.</p>
 
 ```javascript
 
@@ -163,7 +164,7 @@ ____
     console.log("$tempF contains the conversion of raw c° into f°");
     console.log($tempF);
 ```
-<p> To test the data, a few console.log() additions were made. A quick look at the developer console shows the data stored within these new variables.</p>
+<p> To test the data, a few console.log() additions were made. A quick look at the developer console shows what information was stored within the new variables.</p>
 
 <figure>
 <a href ="/images/temp-data.png">
@@ -174,7 +175,7 @@ ____
 
 #### Sending information to the DOM
 
-<p> The next task was manipulation of the DOM to display information dynamically in some existing html elements. The figure below shows the data nestled in the 'weather' object, and the 'main' object. The city/region was passed in from the ip-api data function.</p>
+<p> The figure below shows the next chunks of data I worked with which were nestled inside a 'weather' object, and 'main' object. The city/region data was passed in from the ip-api data function.</p>
 
 <figure>
 <a href ="/images/current-log.png">
@@ -183,6 +184,7 @@ ____
 </figure>
 ____
 
+<p>The next task involved writing code to the base function with some DOM manipulation to display information dynamically into existing html elements.</p>
 
 ```javascript
       //Displays the current weather description//
@@ -201,7 +203,7 @@ ____
       console.log(data.main.humidity + "%");
 ```
 
-<p> The developer console shows the console.log() of data stored within the new variables.</p>
+<p> Viewing the developer console shows data stored within the new variables by way of  console.log() usage.</p>
 
 <figure>
 <a href ="/images/displaycurrent.png">
