@@ -26,7 +26,11 @@ image:
   </a>
   </figure>
 
-<p>The initial post for this project should have detailed the API's to keep information in order; However, the Trianglify and background image process was really in-depth so I chose to share it first. The remaining blog posts will be presented sequentially.</p>
+
+
+<p>The initial blog post for this project should have detailed the API's to keep information in order; However, the Trianglify and background image process was really in-depth so I chose to share it first. The remaining blog posts will be presented sequentially.</p>
+
+<div markdown="0"><a href="/blog/weather-app-pt-2/" class="btn"><i class="fa fa-long-arrow-left fa-lg"></i> Part 1</a></div>
 ____
 
 
@@ -48,7 +52,7 @@ ____
 <p> The API documentation was all I used to complete the previous project. One goal I had for this project was to better understand API calls. Turns out, it's not hard or scary. In my opinion, the best way to understand an API is to use it. Seeing the data yourself definitely helps everything sink in.</p>
 ____
 
-#### What can I do with the data?
+#### Calling the API
 
 <p> Another aspect of API's I found difficult at first was accessing specific portions of the data. The user's city and region needed to pass from ip-api into the Open Weather API call within another function.</p>
 
@@ -103,33 +107,14 @@ function setConditions(city) {
     method: 'GET',
     data: {},
     dataType: 'json',
-    success: function (data) {
-
-      //temp data converted from c° to f° and rounded to display in DOM//
-      $tempC = data.main.temp;
-      $temp = Math.round(data.main.temp);
-      $tempF = Math.round((data.main.temp * 9) / 5 + 32);
-      $displayTempF(data);
-
-      //Functions to add user location, current conditions, relevant icon, and humidity % into the DOM//
-      $('#current').append(data.weather[0].description);
-      $('#location').append($local);
-      $('#pctHumidity').append(data.main.humidity + "%");
-
-      //Function calls which create a background image, and set a relevant icon to the DOM//
-      backgroundImage(data);
-      setIcon(data);
-
-      //variable/function to display date and time data in the DOM//
-      $utcSeconds = data.dt,
-        $time = new Date(0),
-        $time.setUTCSeconds($utcSeconds),
-        $('#time').append($time);
-    },
-    error: function (err) {
-      console.log(err)
-    }
-  });
+    success: function (data) {  
+      console.log("This is the data returned by the API:"),
+      console.log(data);
+  },
+  error: function (err) {
+    console.log(err)
+  }
+});
 }
 ```
 ____
@@ -138,13 +123,67 @@ ____
 
 <p>The function called the Open Weather API with data obtained by the ip-api. A significant amount of data is returned from this call which gets utilized by the remaining functions to add DOM content.</p>
 
+<p> Let's take a look. All we have to do is open the developer console in our browser, because we included a console.log(data); within the function.</p>
+
 <p>
 <figure>
 <a href="/images/openweathercall.png">
-<img src="/images/openweatherthumb.png">
+<img src="/images/openweathercall.png">
 </a>
-<figcaption>
-<p>Click to display complete data</p>
-</figcaption>
 </figure>
 </p>
+
+#### What can I do with the data?
+
+<p> Accessing information becomes pretty simple, once you are able to see the results. The next part of the function will is where we will start breaking apart the data, send it to other functions, and manipulate the DOM.</p>
+
+<p> The first piece of information we want is the current temperature. We see below the 'main' object contains the temperature information. I asked for c°, data can be retrieved in f° and kelvin as well by changing the API call.</p>
+
+<figure>
+<a href ="/images/main-temp.png">
+<img src="/images/main-temp.png">
+</a>
+</figure>
+
+<p>Adding new code to the base function will place temperature data into variables used elsewhere within the app.</p>
+
+```javascript
+//Returns API data and routes it to various functions//
+function setConditions(city) {
+  $.ajax({
+    url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city +
+      '&units=metric&APPID=b13822c4653dbf64c47f5d1ca4177324',
+    method: 'GET',
+    data: {},
+    dataType: 'json',
+    success: function (data) {  
+
+//Variables which contain the temp data//
+    $tempC = data.main.temp;
+    $temp = Math.round(data.main.temp);
+    $tempF = Math.round((data.main.temp * 9) / 5 + 32);
+
+    console.log("This is the raw c° temperature.");
+    console.log($tempC);
+    console.log("This is c° rounded to remove the decimal from the raw c°");
+    console.log($temp);
+    console.log("This is the result of converting the raw c° into f°");
+    console.log($tempF);
+
+//Function calls which send temp data for display in DOM, and to create background image//
+    $displayTempF(data);
+    backgroundImage(data);
+},
+  error: function (err) {
+    console.log(err)
+  }
+});
+}
+```
+<p> Taking a look at the developer console will show the data stored within these new variables.</p>
+
+<figure>
+<a href ="/images/temp-data.png">
+<img src="/images/temp-data.png">
+</a>
+</figure>
