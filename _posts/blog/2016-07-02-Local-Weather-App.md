@@ -123,7 +123,3 @@ var midPurple = Trianglify({
 });
 
 ```
-
-
-
-<div markdown="0"><a href="/blog/weather-app-pt-2/" class="btn pull-right"> Part 2 <i class="fa fa-long-arrow-right fa-lg"></i> </a></div>
