@@ -30,7 +30,7 @@ image:
 
 <p>The initial blog post for this project should have detailed the API's to keep information in order; However, the Trianglify and background image process was really in-depth so I chose to share it first. The remaining blog posts will be presented sequentially.</p>
 
-<div markdown="0"><a href="/blog/weather-app-pt-2/" class="btn"><i class="fa fa-long-arrow-left fa-lg"></i> Part 1</a></div>
+<div markdown="0"><a href="/blog/Local-Weather-App/" class="btn"><i class="fa fa-long-arrow-left fa-lg"></i> Part 1</a></div>
 ____
 
 
@@ -87,9 +87,6 @@ function getLocation() {
 <a href="/images/consolelog.png">
 <img src="/images/consolelog.png">
 </a>
-<figcaption>
-console.log(); showing what the variable $local contains
-</figcaption>
 </figure>
 </p>
 ____
@@ -212,4 +209,91 @@ ____
 </figure>
 ____
 
-#####
+##### Wrapping it up
+
+<p> To complete the final additions to the base function I needed the icon data, and the current time. The icon data was found inside of a'weather' array within the 'icon' object. Time data was within the 'DT' object as shown in the figure below. </p>
+
+<figure>
+<a href ="/images/time-icon.png">
+<img src="/images/time-icon.png">
+</a>
+</figure>
+____
+
+<p> Here are the last bits of code added to the base function.
+<ul>
+<li> A function call passed data to $displayTempF(); which manipulated the DOM by creating a new canvas element to display the temperature both in f° and c°.
+</li>
+<li>A second function call passed data to setIcon(); which displayed an icon reflective of the current weather conditions.
+</li>
+<li>The last function call passed data to backgroundImage(); which created (and displayed) a background image.
+</li>
+<li>Lastly, a function was written which transformed the time data from the API call into a human-readable format for display inside an existing DOM element.
+</li>
+</ul>
+</p>
+
+```javascript
+//Function calls which send temp data for display in DOM, displays icon for current conditions, and creates a background image//
+      $displayTempF(data);
+      backgroundImage(data);
+      setIcon(data);
+
+//variable/function to transform date and time data for display//
+      $utcSeconds = data.dt,
+        $time = new Date(0),
+        $time.setUTCSeconds($utcSeconds),
+        $('#time').append($time);
+      console.log(
+        "Function which transforms this time data from the API:")
+      console.log(data.dt);
+      console.log("into this more human-readable format:");
+      console.log($time);
+```
+<p>One last peek into the developer console to view console.log(); messages, which demonstrate how the time data was manipulated by the function.</p>
+
+<figure>
+<a href ="/images/console-time.png">
+<img src="/images/console-time.png">
+</a>
+</figure>
+____
+
+
+#### Put it all together
+
+ <p>Below is the complete function after removing the comments and console.log(); messages.
+ Take a look at blog post 3 to see the final steps for this project.</p>
+
+
+```javascript
+
+  function setConditions(city) {
+   $.ajax({
+     url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city +
+       '&units=metric&APPID=b13822c4653dbf64c47f5d1ca4177324',
+     method: 'GET',
+     data: {},
+     dataType: 'json',
+     success: function (data) {  
+           $tempC = data.main.temp;
+           $temp = Math.round(data.main.temp);
+           $tempF = Math.round((data.main.temp * 9) / 5 + 32);
+           $('#current').append(data.weather[0].description);
+           $('#location').append($local);
+           $('#pctHumidity').append(data.main.humidity + "%");
+           $displayTempF(data);
+           backgroundImage(data);
+           setIcon(data);
+           $utcSeconds = data.dt,
+           $time = new Date(0),
+           $time.setUTCSeconds($utcSeconds),
+           $('#time').append($time);
+      },
+          error: function (err) {
+            console.log(err)
+      }
+ });
+ }
+```
+____
