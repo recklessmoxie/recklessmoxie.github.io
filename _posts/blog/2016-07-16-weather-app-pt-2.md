@@ -5,7 +5,7 @@ date: 2016-7-16
 modified: 2016-7-18
 comments: true
 share: true
-excerpt:
+excerpt: "Part 2 of Local Weather App write up. This post details the API calls and what was done with the returned data."
 categories: blog
 tags: ["Free Code Camp", "html5 Canvas", "Trianglify", "JavaScript", "API"]
 search_omit: false

@@ -5,7 +5,7 @@ date: 2016-7-1
 modified: 2016-7-2
 comments: true
 share: true
-excerpt:
+excerpt: "Part 1 of Local Weather App write up. This post details the process of creating the background image with Trianglify"
 categories: blog
 tags: ["Free Code Camp", "html5 Canvas", "Trianglify", "JavaScript", "API"]
 search_omit: false
