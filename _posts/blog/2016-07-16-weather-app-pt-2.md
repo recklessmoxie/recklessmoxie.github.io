@@ -29,8 +29,6 @@ image:
 
 
 <p>The initial blog post for this project should have detailed the API's to keep information in order; However, the Trianglify and background image process was really in-depth so I chose to share it first. The remaining blog posts will be presented sequentially.</p>
-
-<div markdown="0"><a href="/blog/Local-Weather-App/" class="btn"><i class="fa fa-long-arrow-left fa-lg"></i> Part 1</a></div>
 ____
 
 
