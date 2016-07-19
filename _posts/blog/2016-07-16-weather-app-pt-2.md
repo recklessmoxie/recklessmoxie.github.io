@@ -70,8 +70,10 @@ function getLocation() {
     success: function (data) {
       $local = data.city + ', ' + data.region;
 
-      //Calls and passes the city/region data into the Open Weather API function//
+  //Calls and passes the city/region data into the Open Weather API function//
       setConditions($local);
+      console.log("User location returned by the API call:");
+      console.log($local);
     },
     error: function (err) {
       console.log(err)
