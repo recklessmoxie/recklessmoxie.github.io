@@ -5,7 +5,7 @@ date: 2016-7-18
 modified: 2016-7-18
 comments: true
 share: true
-excerpt:
+excerpt: "Part 3 of Local Weather App write up. This blog details the DOM manipulation and html5 Canvas elements."
 categories: blog
 tags: ["Free Code Camp", "html5 Canvas", "Trianglify", "JavaScript", "API"]
 search_omit: false
