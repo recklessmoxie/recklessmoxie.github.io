@@ -26,12 +26,14 @@ image:
 
 #### Recap:
 
-  <p>Blog post <a href="/blog/Local-Weather-App/"> (Part 1) </a> detailed the process of selecting color schemes and rendering several Trianglify backgrounds for the project. The focus of blog post <a href="/blog/weather-app-pt-2/"> (Part 2) </a> was the use of console.log() messages and API calls. For this final post, I want to explain the remainder of the code and what it does.</p>
+  <p>Blog post <a href="/blog/Local-Weather-App/"> (Part 1) </a> delved into the process of selecting color schemes and rendering several Trianglify backgrounds for the project. The focus of blog post <a href="/blog/weather-app-pt-2/"> (Part 2) </a> was the use of console.log() messages and API calls. For this final post, my aim is to share the remainder of the code and what it does.</p>
 ____
 
 #### More About Trianglify
 
-<p> The background image was rendered to a Canvas element. A multi-layered process which took data from the Open API call and passed it through a few functions. Below is the code for the first of the functions: backgroundImage().</p>
+<p> The final background image was rendered to a Canvas element by a call made within the base function (detailed in my previous blog post). This was a multi-layered process which: took data from the Open API call, passed it into a function which evaluated the data, and determined (by way of temperature range comparisons) which color palette to render to the DOM. Each color palette was a variable set to a Trianglify function.. </p>
+
+<p>See the evaluation function below: </p>
 
 ```javascript
 //renders trianglify pattern/image to canvas based on the user's current temp range//
@@ -67,14 +69,14 @@ function backgroundImage(data) {
 }
 ```
 
-<p> This function evaluates both $tempF and $tempC to determine the correct background image to render based on temperature range. Once the range is determined, the image is rendered into the html5 Canvas element. If for some reason the temperature is outside of the defined ranges, the background will default to a random Trianglify image.</p>
+<p>If for some reason the temperature was found to be outside of the defined ranges, the function will default to render a random Trianglify image.</p>
 
 <p>* Side note: while working on the write-up, I realized a $tempF comparison was redundant. It was removed to dry up the project code.</p>
 ____
 
 #### Weather Icons
 
-<p> The Open Weather API call returns an icon code, which can be used with their icons available on the website. The design of those icons wasn't to my liking. Instead I chose to use the <a href="https://erikflowers.github.io/weather-icons/"> Weather Icons </a> created by Erik Flowers. These icons are built for Bootstrap and have built-in compatibility with the Open Weather API codes.</p>
+<p> The Open Weather API call returns an icon code. This code can be used with the icons available on the Open Weather website. Unfortunately, the design of the Open Weather icons wasn't to my liking. Instead, I chose to use the <a href="https://erikflowers.github.io/weather-icons/"> Weather Icons </a> created by Erik Flowers. These icons were built with Bootstrap in mind, and are compatible with the Open Weather API codes.</p>
 
 <P> The API call returns an icon code as seen here:</p>
 
@@ -86,7 +88,7 @@ ____
 </figure>
 </p>
 
-<p> Note the 'd', portion of the icon code, this refers the current time of day. At night the string will change to 'n'. The icon package includes a icon to correspond with both day and night conditions. In order to display the correct icon, a function was written to evaluate the API data to determines if it's currently day, or night. Once the determination has been made, the correct icon is rendered into an existing DOM element.</p>
+<p> Note the 'd', portion of the icon code which refers to the current time of day. At night the string will change to 'n'. The icon package includes an icon that corresponds to both day and night conditions. In order to display the proper icon, a function was written which determined whether it was currently day, or night. After determining the correct icon, the function then rendered it into an existing DOM element.</p>
 
 <p> Here is the function:</p>
 
@@ -121,14 +123,14 @@ ____
 </figure>
 </p>
 
-<p> One project objective was for the temperature to be displayed with a user toggle for f° and c°. My goal with this objective was to render the temperature within a circle (drawn dynamically) based on the size of text it contained, while allowing the user to toggle c°/f° on mouse click. This goal was met by creating html5 Canvas elements to display the information to the DOM.</p>
+<p> One project objective was for the temperature to be displayed with a user toggle for f° and c°. My personal goal within the objective: Render the temperature within a circle (drawn dynamically) based on the size of text it contained, while allowing the user to toggle c°/f° on mouse click. This goal was met by creating html5 Canvas elements to display the information in the DOM.</p>
 ____
 
 
 
 #### A Tiny Problem:
 
-<p> Originally, there were two hard coded Canvas elements within the html. The function I wrote would render each circle dynamically to these elements (#circle1 or #circle2). The #circle2 element remained hidden until triggered by a click event.</p>
+<p> Originally, there were two hard coded Canvas elements in the html. The function I wrote would render each circle dynamically to the element (#circle1 or #circle2). The #circle2 element remained hidden until triggered by a click event.</p>
 
 <p> Unfortunately, while structuring the CSS it became obvious this was not a viable method to render the data. The problem: upon toggle the entire look/structure of the DOM changed based on which circle was being rendered. A more experienced coder may have caught this while writing the js; However, for me this proved to be a real learning opportunity.</p>
 ____
