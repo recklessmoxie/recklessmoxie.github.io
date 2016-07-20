@@ -118,7 +118,7 @@ ____
 
 #### What happened?
 
-<p>An Open Weather API call was made with the inclusion of data obtained by the ip-api. In order to see the significant amount of data returned by the API call, I included a console.log(). A quick look at the developer console reveals this data.</p>
+<p>An Open Weather API call was made with the inclusion of data obtained by the ip-api. In order to see the significant amount of data returned by the API call, I included a console.log(). A quick look at the developer console reveals the data.</p>
 
 
 <p>
@@ -222,7 +222,7 @@ ____
 
 <p> Here are the last bits of code added to the base function.
 <ul>
-<li> A function call passed data to $displayTempF(); which manipulated the DOM by creating a new canvas element to display the temperature both in f° and c°.
+<li> A function call passed data to $displayTempF(); which manipulated the DOM and created a new canvas element to display the temperature both in f° and c°.
 </li>
 <li>A second function call passed data to setIcon(); which displayed an icon reflective of the current weather conditions.
 </li>
