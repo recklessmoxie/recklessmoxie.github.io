@@ -113,9 +113,45 @@ ____
 
 #### Displaying Temperature with a Toggle:
 
-<p> One project objective was for the temperature to be displayed with a user toggle for f° and c°. This objective was met by creating html5 Canvas elements to display the information to the DOM.</p>
+<p>
+<figure class="pull-right">
+<a href="/images/temp-circle.png">
+<img src="/images/temp-circle.png">
+</a>
+</figure>
+</p>
 
-<p> My goal within this objective was to show the temperature within a circle (drawn dynamically) based on the size of text it contained. Below is the function to display the initial f° temperature in an existing #circle Canvas element:</p>
+<p> One project objective was for the temperature to be displayed with a user toggle for f° and c°. My goal with this objective was to render the temperature within a circle (drawn dynamically) based on the size of text it contained, while allowing the user to toggle c°/f° on mouse click. This goal was met by creating html5 Canvas elements to display the information to the DOM.</p>
+____
+
+
+
+#### A Tiny Problem:
+
+<p> Originally, there were two hard coded Canvas elements within the html. The function I wrote would render each circle dynamically to these elements (#circle1 or #circle2). The #circle2 element remained hidden until triggered by a click event.</p>
+
+<p> Unfortunately, while structuring the CSS it became obvious this was not a viable method to render the data. The problem: upon toggle the entire look/structure of the DOM changed based on which circle was being rendered. A more experienced coder may have caught this while writing the js; However, for me this proved to be a real learning opportunity.</p>
+____
+
+#### The Solution:
+
+<p>After doing some research, I found a clever (in my opinion) workaround to eliminate the issue. By using a library called <a href="http://projects.calebevans.me/jcanvas/docs/introduction/"> jCanvas, </a> I was able to create a click event triggered within the (#circle1) rendering function.</p>
+
+<p> To take advantage of this new capability, a single html div element was (hard-coded) with an id of #circle. The $displayTempF function then needed to:</p>
+<ul>
+<li>Have the first action clear the contents of the #circle element (deleting the children elements).
+</li>
+<li>Create a new Canvas element with an id of #circle1 as a child of the #circle element.
+</li>
+<li>Render the text content of $tempF, and the circle surrounding it within the new Canvas element.
+</li>
+<li>Create a click handler in $displayTempF which would call the $displayTempC function.
+</li>
+</ul>
+____
+
+
+#### The $displayTempF Function:
 
 ```javascript
 //draws the text (user's current temp) into a circle element, with °f visible until click event//
@@ -150,17 +186,16 @@ function $displayTempF(data) {
 ```
 ____
 
-#### A Tiny Problem:
+#### The $displayTempC Function:
 
-<p> Originally, there were two hard coded Canvas elements within the html. The function would then render each circle dynamically to these elements (#circle1 or #circle2). The #circle2 element remained hidden until triggered by a click event.</p>
+<p> I'm not going to demonstrate the code for this function, because the only difference between it and $displayTempF is two variables. This function was also coded to clear the children of #circle, and create a Canvas element to render #circle2. The click event which triggered the $displayTempF function was written within this function exactly as demonstrated in the previous code example.</p>
 
-<p> Unfortunately, while structuring the CSS it became obvious this was not a viable method to render the data. A more experienced coder may have caught this while writing the js; However, for me this proved to be a real learning opportunity.</p>
+<p> This was the last portion of JavaScript code written for the project. Please feel free to visit the <a href="https://github.com/recklessmoxie/Weather-App"> Github Repository </a> for a look at the code in it's entirety.</p>
+___
 
-<p>Each Canvas element was contained in a specific column/row within the DOM . The problem was that upon toggle the entire look/structure of the DOM would change based on which circle was being rendered.</p>
-____
+#### That's All Folks!
 
-#### The Solution:
+<p> Thank you for reading my blog. I really enjoyed working on this project and found writing about it very helpful. I ended up making several adjustments/edits, which were necessary to dry up the code. I'm not certain I would have been aware of the issues were it not for writing these blog posts.</p>
 
-<p>I found a clever (in my opinion) workaround to eliminate the issue by using a library called <a href="http://projects.calebevans.me/jcanvas/docs/introduction/"> jCanvas. </a> The reason for including this library, is it allowed for a click event to be triggered within the (#circle1) rendering function. I took advantage of this capability by calling a function to render #circle2 with a click event inside of the #circle1 function.</p>
-
-#### In Progress, check back soon!
+<p> Best of luck to those of you in the midst of a coding journey. Keep at it, and find me on <a href="https://twitter.com/RecklessMoxie">Twitter</a> let's talk about code!
+Check back soon for new project posts!</p>
