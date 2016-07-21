@@ -1,12 +1,18 @@
 ---
 layout: post
-title: Wikipedia-viewer-project
-modified:
-categories: 
+title: Wikipedia Viewer
+date: 2016-7-20
+modified: 2016-7-20
+comments: true
+share: true
 excerpt:
-tags: []
+categories: blog
+tags: ["Free Code Camp", "Wikipedia Viewer", "JavaScript", "API"]
+search_omit: false
 image:
-  feature:
-date: 2016-07-20T17:12:21-07:00
+  feature: train.jpg
+  thumb: trainthumb.jpg
+  credit: Shelly Barkley
 ---
 
+#### Check back later for this blog post. 
