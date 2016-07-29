@@ -75,7 +75,7 @@ ____
 
 #### Search Bar and Icon:
 
-<p> The FCC project demo included a magnifying glass icon which upon click expanded into a search bar. I set out to replicate this effect and created an image with the magnifying glass and text together (as I had done with the prior elements).</p>
+<p> The FCC project demo included a magnifying glass icon which upon click expanded into a search bar. I set out to replicate this effect and created an image with the magnifying glass and text together (as I had done with the prior elements). A (GO) button was added as a way to submit for search, along with pressing the enter key.</p>
 
 <p><figure class="half">
 <a href ="/images/searchicon.png">
@@ -139,3 +139,57 @@ input.searchSubmit {
  background: none;
 }
 ```
+___
+
+#### Styling Search Results:
+
+<p><figure class="half">
+<a href ="/images/goats.png">
+<img src="/images/goats.png">
+</a>
+<a href ="/images/resulting.png">
+<img src="/images/resulting.png">
+</a>
+<figcaption>
+Search Term and Results
+</figcaption>
+</figure>
+</p>
+
+<p> Animate.css was used to allow the element which displayed search results to slide into view. The styling was kept simple in this element as well. The text was colored with meaning: Title and link to the full Wikipedia article colored in dark green (with hover link underline and color change), Snip of article text white, and search term in yellow.</p>
+_____
+
+
+#### Including a (GO) button:
+
+<p> The (GO) button element (#getIt) was added to give users an interactive action element to retrieve search results. To keep a clean page appearance, this element remained hidden until the expansion of the search bar (through user click). Some search bars rely only on the user pressing the enter key, but I felt this addition made the app more user-friendly. Once this was added I came upon some difficulty.....</p>
+
+
+### JavaScript Challenges:
+
+<p> The portion of JavaScript which proved challenging was setting up an event handler for the #searchText element to trigger a click function on an input element once the enter key was pressed (and released). Adding to the complication was my lack of understanding regarding <a href="https://api.jquery.com/event.preventdefault/"> preventDefault(); </a>.</p>
+
+<p> After doing some reading about this, <a href="http://stackoverflow.com/questions/979662/how-to-detect-pressing-enter-on-keyboard-using-jquery"> event handlers </a> (thank you Stack Overflow!), and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" form elements </a> I was able to clear up the issue I'd been having.</p>
+
+<p> See the resulting code snippet below:</p>
+
+```javascript
+//hide the go button element until user clicks on search icon//
+$('#getIt').hide();
+
+$('#searchText').click(function () {
+  $('#getIt').show();
+});
+
+//event handler to trigger the click event for the go button.//
+$('#searchText').keyup(function (e) {
+  if (e.which == 13) {
+    $('#getIt').click();
+    e.preventDefault();
+  }
+});
+```
+
+#### Conclusion:
+
+<p> I enjoyed this project and it was challenging to keep the design minimal. I am looking forward to moving on to algorithims soon (one more project left!). Feel free to comment below, or catch me on <a href="https://twitter.com/RecklessMoxie"> Twitter. </a> I'd love to talk about these projects, or whatever you're working on. Thanks for reading!</p>

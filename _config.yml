@@ -5,10 +5,10 @@ locale: en_us
 description: Personal portfolio and tech blog.
 logo: site-logo.png
 search: true
-# url: http://localhost:4000
-url: http://recklessmoxie.com
-url: //recklessmoxie.com
-url: http://www.recklessmoxie.com
+url: http://localhost:4000
+# url: http://recklessmoxie.com
+# url: //recklessmoxie.com
+# url: http://www.recklessmoxie.com
 
 # Jekyll configuration
 

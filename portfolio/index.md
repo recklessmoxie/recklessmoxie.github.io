@@ -2,16 +2,36 @@
 layout: post  
 title: Portfolio  
 date: 2016-5-15
-modified: 2016-5-15
+modified: 2016-7-29
 excerpt: "Here are a few of the projects I have completed."
 image:
   feature: sculpture.jpg
   credit: Shelly Barkley
 
 ---
+
+<div class="well">
+<h4> Wikipedia Viewer </h4>
+<p> This intermediate-level project is part of the Front End Development Certification through
+<a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
+</p>
+<p> See the <a href="/blog/wikipedia-viewer-project/"> blog post </a> about this project.</p>
+
+<figure class="caption-title">
+<img src="/images/goatsearch.png">
+<figcaption>
+<h3>Wikipedia Viewer</h3>
+<p> View project on Codepen</p>
+<i class ="fa fa-codepen text-center"></i>
+</figcaption>
+<a href="http://codepen.io/RecklessMoxie/full/QEBbJK/"></a>
+</figure>
+</div>
+_____
+
 <div class="well">
 <h4>Local Weather App</h4>
-<p> This project is part of the Front End Development Certification through
+<p> This intermediate-level project is part of the Front End Development Certification through
 <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
 </p>
 <p>See the <a href="/blog/Local-Weather-App/"> blog post </a> about this project.</p>
@@ -24,25 +44,13 @@ image:
 </figcaption>
 <a href="http://codepen.io/RecklessMoxie/full/qNNQjV/"></a>
 </figure>
-<h5>Project Guidelines</h5>
-<ol>
-<li>Don't look at the example project's code. Figure it out for yourself.</li>
-<li>Fulfill the below user stories. Use whichever libraries or APIs you need. Give it your own personal style.</li>
-</ol>
-<ul>
-<li>User Story: I can see the weather in my current location.</li>
-<li>User Story: I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.</li>
-<li>User Story: I can push a button to toggle between Fahrenheit and Celsius.</li>
-</ul>
 </div>
 _____
 
 
-
-
 <div class="well">
 <h4>Random Quote Generator</h4>
-<p>This project is part of the Front End Development Certification through
+<p>This intermediate-level project is part of the Front End Development Certification through
 <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
 </p>
 <figure class="caption-title">
