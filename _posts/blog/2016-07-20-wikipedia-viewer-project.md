@@ -5,7 +5,7 @@ date: 2016-7-20
 modified: 2016-7-29
 comments: true
 share: true
-excerpt:
+excerpt: "Free Code Camp project: Create an app where the user can search Wikipedia entries in a search box and see the resulting Wikipedia entries."
 categories: blog
 tags: ["Free Code Camp", "Wikipedia Viewer", "JavaScript", "API"]
 search_omit: false
