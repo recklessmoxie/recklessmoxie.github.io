@@ -29,7 +29,7 @@ image:
   <a href="http://www.recklessmoxie.com/wikipedia-viewer/"></a>
   </figure>
 
-  ____
+____
 
 ### Html/CSS:
 
@@ -75,7 +75,7 @@ ____
 
 #### Search Bar and Icon:
 
-<p> The FCC project demo included a magnifying glass icon which upon click expanded into a search bar. I set out to replicate this effect and created an image with the magnifying glass and text together (as I had done with the prior elements).<p>
+<p> The FCC project demo included a magnifying glass icon which upon click expanded into a search bar. I set out to replicate this effect and created an image with the magnifying glass and text together (as I had done with the prior elements).</p>
 
 <p><figure class="half">
 <a href ="/images/searchicon.png">
@@ -93,6 +93,7 @@ Search Icon with Text & Search Bar Extended
 <p>Expanding the search bar was achieved with some manipulation of the CSS</p>
 
 ```css
+
 input.searchText {
  color: #857e76;
  position:relative;
