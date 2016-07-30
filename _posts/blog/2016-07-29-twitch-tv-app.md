@@ -14,4 +14,4 @@ image:
   thumb: trainthumb.jpg
   credit: Shelly Barkley
 ---
-### Project in progress, check back soon! ok.
+### Project in progress, check back soon! 
