@@ -11,6 +11,26 @@ image:
 ---
 
 <div class="well">
+<h4> Twitch Tv API App </h4>
+<p> This intermediate-level project is part of the Front End Development Certification through <a href="https://www.freecodecamp.com/"> Free Code Camp. </a>
+</p>
+
+<figure class="caption-title">
+<img src="/images/screenshot2.png">
+<figcaption>
+<h3> Twitch Tv App </h3>
+<p> View project on Codepen</p>
+<i class="fa fa-codepen text-center"></i>
+</figcaption>
+<a href="http://codepen.io/RecklessMoxie/full/dXjzzN/"></a>
+</figure>
+</div>
+
+<p> View User-Stories and full project code on <a href="https://github.com/recklessmoxie/twitch-tv"> GitHub. </a>
+</p>
+____
+
+<div class="well">
 <h4> Wikipedia Viewer </h4>
 <p> This intermediate-level project is part of the Front End Development Certification through
 <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
@@ -46,7 +66,6 @@ _____
 </figure>
 </div>
 _____
-
 
 <div class="well">
 <h4>Random Quote Generator</h4>
