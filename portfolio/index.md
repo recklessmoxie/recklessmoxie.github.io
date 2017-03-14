@@ -2,13 +2,31 @@
 layout: post  
 title: Portfolio  
 date: 2016-5-15
-modified: 2016-7-29
-excerpt: "Here are a few of the projects I have completed."
+modified: 2017-3-14
+excerpt: "Here are a some of my projects."
 image:
   feature: sculpture.jpg
   credit: Shelly Barkley
 
 ---
+<div class="well">
+<h4>Edmonds NAC Organization Website</h4>
+<p>This is the website for a local political organization which I have made significant contributions to.
+<a href="http://edmondsnac.org/">Edmonds NAC</a>
+</p>
+
+<figure class="caption-title">
+<img src="/images/enac.png">
+<figcaption>
+<h3>Enac Website</h3>
+<p> View my contributions on GitHub</p>
+<i class ="fa fa-github text-center"></i>
+</figcaption>
+<a href="https://github.com/sounderminds/sounderminds.github.io"></a>
+</figure>
+</div>
+
+
 
 <div class="well">
 <h4> Wikipedia Viewer </h4>
