@@ -39,6 +39,8 @@ image:
 </figcaption>
 <a href="http://codepen.io/RecklessMoxie/full/XjxyEQ/"></a>
 </figure>
+<p> View User-Stories and full project code on <a href="https://github.com/recklessmoxie/javascript-calculator"> GitHub. </a>
+</p>
 </div>
 
 <div class="well">
