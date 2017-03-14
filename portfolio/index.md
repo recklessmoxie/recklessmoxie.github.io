@@ -26,11 +26,24 @@ image:
 </figure>
 </div>
 
-
+<div class="well">
+<h4>JavaScript Calculator</h4>
+<p>This is an Advanced Front End Development Project which is part of the Front End Development Certification curriculum at <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
+</p>
+<figure class="caption-title">
+<img src="/images/js-calc.png">
+<figcaption>
+<h3>Wikipedia Viewer</h3>
+<p> View project on Codepen</p>
+<i class ="fa fa-codepen text-center"></i>
+</figcaption>
+<a href="http://codepen.io/RecklessMoxie/full/XjxyEQ/"></a>
+</figure>
+</div>
 
 <div class="well">
 <h4> Wikipedia Viewer </h4>
-<p> This intermediate-level project is part of the Front End Development Certification through
+<p> This Intermediate-Level project is part of the Front End Development Certification curriculum at
 <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
 </p>
 <p> See the <a href="/blog/wikipedia-viewer-project/"> blog post </a> about this project.</p>
@@ -49,7 +62,7 @@ _____
 
 <div class="well">
 <h4>Local Weather App</h4>
-<p> This intermediate-level project is part of the Front End Development Certification through
+<p> This Intermediate-Level project is part of the Front End Development Certification curriculum at
 <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
 </p>
 <p>See the <a href="/blog/Local-Weather-App/"> blog post </a> about this project.</p>
@@ -68,7 +81,7 @@ _____
 
 <div class="well">
 <h4>Random Quote Generator</h4>
-<p>This intermediate-level project is part of the Front End Development Certification through
+<p>This intermediate-level project is part of the Front End Development Certification curriculum at
 <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
 </p>
 <figure class="caption-title">
@@ -97,7 +110,7 @@ _____
 
 <div class="well">
 <h4>Personal Portfolio Webpage</h4>
-<p>This project is part of the Front End Development Certification through
+<p>This project is part of the Front End Development Certification curriculum at
   <a href="https://www.freecodecamp.com/"> Free Code Camp.</a>
 </p>
 <figure class="caption-title">
@@ -127,7 +140,7 @@ _____
 
 <div class="well">
   <h4>Tribute Page</h4>
-  <p>This project is part of the Front End Development Certification through
+  <p>This project is part of the Front End Development Certification curriculum at
   <a href="https://www.freecodecamp.com/"> Free Code Camp.</a></p>
 <figure class="caption-title">
   <img  src="http://res.cloudinary.com/recklessmoxie/image/upload/c_crop,h_320,q_100,w_440,x_156,y_214/v1462596674/tribute.jpg" alt="Tribute Page">
