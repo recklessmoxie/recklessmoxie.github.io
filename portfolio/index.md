@@ -33,13 +33,13 @@ image:
 <figure class="caption-title">
 <img src="/images/js-calc.png">
 <figcaption>
-<h3>Wikipedia Viewer</h3>
+<h3>JavaScript Calculator</h3>
 <p> View project on Codepen</p>
 <i class ="fa fa-codepen text-center"></i>
 </figcaption>
 <a href="http://codepen.io/RecklessMoxie/full/XjxyEQ/"></a>
 </figure>
-<p> View User-Stories and full project code on <a href="https://github.com/recklessmoxie/javascript-calculator"> GitHub. </a>
+<p> View User-Stories and full project code on <a href="https://github.com/recklessmoxie/javascript-calculator"> GitHub.</a>
 </p>
 </div>
 
