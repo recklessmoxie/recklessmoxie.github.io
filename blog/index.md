@@ -6,7 +6,7 @@ excerpt: "An archive of blog posts sorted by date."
 search_omit: true
 image:
   feature: balls.jpg
-  credit: Shelly Barkley
+  credit: Shelly Fiabane
 ---
 
 <ul class="post-list">

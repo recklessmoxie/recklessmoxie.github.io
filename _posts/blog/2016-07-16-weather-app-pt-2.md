@@ -12,7 +12,7 @@ search_omit: false
 image:
   feature: steamy.jpg
   thumb: weather1thumb.png
-  credit: Shelly Barkley
+  credit: Shelly Fiabane
 ---
 
 

@@ -6,7 +6,7 @@ modified:
 excerpt:
 image:
   feature: mist.jpg
-  credit: Shelly Barkley
+  credit: Shelly Fiabane
 search_omit: true
 sitemap: false
 ---

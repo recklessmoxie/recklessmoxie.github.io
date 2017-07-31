@@ -12,7 +12,7 @@ search_omit: false
 image:
   feature: steamy.jpg
   thumb: weather1thumb.png
-  credit: Shelly Barkley
+  credit: Shelly Fiabane
 ---
 ### Project Objectives:
   * Create an app using the Open Weather API, and geolocation to display the user's current weather conditions.

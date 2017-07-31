@@ -12,7 +12,7 @@ search_omit: false
 image:
   feature: train.jpg
   thumb: trainthumb.jpg
-  credit: Shelly Barkley
+  credit: Shelly Fiabane
 ---
 
 ### Project Objectives:

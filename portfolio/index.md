@@ -6,7 +6,7 @@ modified: 2017-3-14
 excerpt: "Here are a some of my projects."
 image:
   feature: sculpture.jpg
-  credit: Shelly Barkley
+  credit: Shelly Fiabane
 
 ---
 <div class="well">

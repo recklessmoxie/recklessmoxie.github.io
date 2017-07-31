@@ -1,23 +1,23 @@
 ---
 layout: post
 title: About Me
-date: 2017-3-14
+date: 2017-7-31
 search_omit: true
 share: false
 comments: false
 image:
-  feature: greatwheel1.jpg
-  credit: Shelly Barkley
+  feature: shishi2.jpg
+  credit: Shelly Fiabane
 ---
 
 
 
 ### Who am I?
 
-My name is Shelly Barkley.
+My name is Shelly Fiabane.
 I'm a computer programmer/developer currently living in a suburb just outside of Seattle, Washington.
 
- My fiancé Jason and I are animal lovers who consider ourselves lucky to share our home with a cat, a dog, and 6 birds. The house is rarely quiet (or perfectly clean), but we wouldn't have it any other way.
+ My husband Jason and I are animal lovers who consider ourselves lucky to share our home with a cat, a dog, and 6 birds. The house is rarely quiet (or perfectly clean), but we wouldn't have it any other way.
 
  <figure class="third">
   <a href="/images/vito.jpg"><img src="/images/vito.jpg" alt="dog"></a>
@@ -31,6 +31,7 @@ ____
  A few activities I enjoy in my spare time are:
 
   * Traveling
+  * Gardening
   * Photography
   * Hiking and camping
   * Cooking
